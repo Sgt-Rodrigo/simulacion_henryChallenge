@@ -14,9 +14,10 @@ function buscarAmigo(amigos, nombre) {
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
   // Tu código aca:
+  return amigos.filter(e => e.nombre.toLowerCase() === nombre.toLowerCase())[0]
   
 }
-
+buscarAmigo([{ nombre: 'toni', edad: 33 } , { nombre: 'Emi', edad: 25 }], 'toni');
 // No modifiques nada debajo de esta linea //
 
 module.exports = buscarAmigo
